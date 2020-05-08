@@ -167,6 +167,7 @@ export class Stage {
    */
   resizeWindow() {
     this.ui.resizeOverlay();
+    this.redraw();
   }
 
   waitingListeners: Array<() => void> = [];
